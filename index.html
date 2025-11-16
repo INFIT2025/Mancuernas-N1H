@@ -27,12 +27,13 @@
             background-color: #1a1a1a;
         }
         .youtube-link {
-            color: #FFC107;
+            /* Color Rojo YouTube para contraste y familiaridad */
+            color: #FF0000; 
             margin-left: 0.5rem;
             transition: color 0.2s;
         }
         .youtube-link:hover {
-            color: #E6A700;
+            color: #E6A700; /* Dorado INFIT al pasar el ratón */
         }
     </style>
 </head>
@@ -47,10 +48,10 @@
             <h1 class="text-5xl font-bold text-infit uppercase tracking-wider">Plan de Entrenamiento Principiante</h1>
             <h2 class="text-2xl font-semibold text-gray-300 mt-2">SOLO MANCUERNAS (CASA O GYM)</h2>
             <div class="mt-4 text-lg max-w-3xl mx-auto text-gray-300">
-                [cite_start]<p class="font-bold">Nivel: Principiante [cite: 33]</p>
-                [cite_start]<p>Frecuencia: Lunes a Viernes [cite: 30]</p>
-                [cite_start]<p>Duración por sesión: 60-90 minutos [cite: 31]</p>
-                [cite_start]<p>Descanso entre series: 45-60 segundos [cite: 32]</p>
+                <p class="font-bold">Nivel: Principiante</p>
+                <p>Frecuencia: Lunes a Viernes</p>
+                <p>Duración por sesión: 60-90 minutos</p>
+                <p>Descanso entre series: 45-60 segundos</p>
             </div>
             <p class="mt-4 text-lg max-w-3xl mx-auto text-gray-300">
                 Tu Mejor Versión te está esperando.
@@ -62,7 +63,7 @@
                 <h2 class="text-3xl font-bold text-infit mb-6 text-center">🏋️ Rutina Semanal</h2>
 
                 <p class="text-gray-400 text-center mb-6">
-                    Equipo necesario: Mancuernas ajustables o de diferentes pesos + tapete o banco. [cite_start]Enfócate en la técnica. [cite: 34]
+                    Equipo necesario: Mancuernas ajustables o de diferentes pesos + tapete o banco. Enfócate en la técnica.
                 </p>
 
                 <nav id="day-selector" class="flex flex-wrap justify-center gap-2 md:gap-4 mb-6">
@@ -86,17 +87,17 @@
                         <li>
                             <h3 class="font-bold text-lg text-white">Progresión Semanal:</h3>
                             <p class="text-gray-400">
-                                [cite_start]Semana 1-2: Peso ligero, enfoque en técnica. [cite: 71]<br>
-                                [cite_start]Semana 3-4: Aumenta 10-15% el peso. [cite: 72]
+                                Semana 1-2: Peso ligero, enfoque en técnica.<br>
+                                Semana 3-4: Aumenta 10-15% el peso.
                             </p>
                         </li>
                         <li>
                             <h3 class="font-bold text-lg text-white">Guía General:</h3>
                             <ul class="list-disc ml-5 text-gray-400 space-y-2">
-                                [cite_start]<li>Calienta antes (5-10 min de movilidad o cardio ligero). [cite: 74]</li>
-                                [cite_start]<li>Estira al final (5-10 min). [cite: 75]</li>
-                                [cite_start]<li>Registra tus pesos y progresos. [cite: 76]</li>
-                                [cite_start]<li>Hidratación constante. [cite: 78]</li>
+                                <li>Calienta antes (5-10 min de movilidad o cardio ligero).</li>
+                                <li>Estira al final (5-10 min).</li>
+                                <li>Registra tus pesos y progresos.</li>
+                                <li>Hidratación constante.</li>
                             </ul>
                         </li>
                     </ul>
@@ -130,71 +131,70 @@
     <script>
         const trainingData = {
             lunes: {
-                [cite_start]group: "PECHO Y TRÍCEPS [cite: 36]",
-                [cite_start]objective: "Activar la parte superior del torso [cite: 37]",
+                group: "PECHO Y TRÍCEPS",
+                objective: "Activar la parte superior del torso",
                 exercises: [
-                    [cite_start]{ name: "Press de pecho con mancuernas (en banco o suelo)", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=jWnGhz1f5D4 [cite: 3, 38]" },
-                    [cite_start]{ name: "Aperturas con mancuernas", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=OrlXQdNwNwM [cite: 4, 38]" },
-                    [cite_start]{ name: "Press inclinado con mancuernas", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=MkMf308jXww [cite: 5, 38]" },
-                    [cite_start]{ name: "Copa tríceps", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=rGFXnq5aHQg [cite: 6, 38]" },
-                    [cite_start]{ name: "Patada de tríceps", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=35U1T7p8MME [cite: 7, 38]" },
+                    { name: "Press de pecho con mancuernas (en banco o suelo)", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=jWnGhz1f5D4" },
+                    { name: "Aperturas con mancuernas", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=OrlXQdNwNwM" },
+                    { name: "Press inclinado con mancuernas", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=MkMf308jXww" },
+                    { name: "Copa tríceps", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=rGFXnq5aHQg" },
+                    { name: "Patada de tríceps", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=35U1T7p8MME" },
                 ],
-                [cite_start]// El core de lunes es: Finaliza: 3 minutos de plancha o abdominales. [cite: 39]
-                [cite_start]core: 'Finaliza con 3 minutos de plancha o [abdominales](https://www.youtube.com/watch?v=zfY5XXa26ug)[cite: 8].',
-                [cite_start]cardio: "Opcional: 10-15 minutos de saltos, cuerda, caminata rápida o bicicleta estática. [cite: 41]",
+                // El core de lunes es: Finaliza: 3 minutos de plancha o abdominales.
+                core: 'Finaliza con 3 minutos de plancha o [abdominales (crunch)](https://www.youtube.com/watch?v=zfY5XXa26ug).',
+                cardio: "Opcional: 10-15 minutos de saltos, cuerda, caminata rápida o bicicleta estática.",
             },
             martes: {
-                [cite_start]group: "ESPALDA Y BÍCEPS [cite: 42]",
-                [cite_start]objective: "Fortalecer la espalda y brazos [cite: 43]",
+                group: "ESPALDA Y BÍCEPS",
+                objective: "Fortalecer la espalda y brazos",
                 exercises: [
-                    [cite_start]{ name: "Remo con mancuernas (una mano)", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=N_KrUuUsg9k [cite: 10, 44]" },
-                    [cite_start]{ name: "Pull-over con mancuernas", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=OyAZc4837QQ [cite: 11, 44]" },
-                    [cite_start]{ name: "Peso muerto con mancuernas", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=7EFIWfvU59w [cite: 12, 44]" },
-                    [cite_start]{ name: "Curl de bíceps alternado", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=9Q7Ncmr0bLg [cite: 13, 44]" },
-                    [cite_start]{ name: "Curl tipo martillo", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=Xfp9_TCvba0 [cite: 14, 44]" },
-                    [cite_start]{ name: "Curl concentrado (sentado o apoyado)", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=ol7LxnEFmZU [cite: 15, 44]" },
+                    { name: "Remo con mancuernas (una mano)", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=N_KrUuUsg9k" },
+                    { name: "Pull-over con mancuernas", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=OyAZc4837QQ" },
+                    { name: "Peso muerto con mancuernas", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=7EFIWfvU59w" },
+                    { name: "Curl de bíceps alternado", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=9Q7Ncmr0bLg" },
+                    { name: "Curl tipo martillo", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=Xfp9_TCvba0" },
+                    { name: "Curl concentrado (sentado o apoyado)", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=ol7LxnEFmZU" },
                 ],
                 core: "Sin ejercicio de Core específico en la rutina.",
-                [cite_start]cardio: "Opcional: 10-15 minutos de saltos, cuerda, caminata rápida o bicicleta estática. [cite: 46]",
+                cardio: "Opcional: 10-15 minutos de saltos, cuerda, caminata rápida o bicicleta estática.",
             },
             miercoles: {
-                [cite_start]group: "PIERNAS Y GLÚTEOS [cite: 48]",
-                [cite_start]objective: "Fortalecer el tren inferior [cite: 48]",
+                group: "PIERNAS Y GLÚTEOS",
+                objective: "Fortalecer el tren inferior",
                 exercises: [
-                    [cite_start]{ name: "Sentadillas con mancuernas", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=4xVs7iOSd2Q [cite: 17, 49]" },
-                    [cite_start]{ name: "Peso muerto rumano (piernas semirrígidas)", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=yxLk9X5C7RU [cite: 18, 49]" },
-                    [cite_start]{ name: "Zancadas alternadas", setsReps: "3 Series / 10 Repeticiones por pierna", url: "https://www.youtube.com/watch?v=uqvt79Uh404 [cite: 19, 49]" },
-                    [cite_start]// Se usa el nombre del plan original Sentadilla búlgara con el link proporcionado para Extensión de rodilla (una pierna) [cite: 20] que es el ejercicio de una sola pierna.
-                    [cite_start]{ name: "Sentadilla búlgara (una pierna sobre banco)", setsReps: "3 Series / 10 Repeticiones por pierna", url: "https://www.youtube.com/watch?v=v_jM-eTlzXQ [cite: 20, 49]" },
-                    [cite_start]{ name: "Elevaciones de talones (pantorrillas)", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=H3lii8hPzlc [cite: 21, 49]" },
+                    { name: "Sentadillas con mancuernas", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=4xVs7iOSd2Q" },
+                    { name: "Peso muerto rumano (piernas semirrígidas)", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=yxLk9X5C7RU" },
+                    { name: "Zancadas alternadas", setsReps: "3 Series / 10 Repeticiones por pierna", url: "https://www.youtube.com/watch?v=uqvt79Uh404" },
+                    { name: "Sentadilla búlgara (una pierna sobre banco)", setsReps: "3 Series / 10 Repeticiones por pierna", url: "https://www.youtube.com/watch?v=v_jM-eTlzXQ" },
+                    { name: "Elevaciones de talones (pantorrillas)", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=H3lii8hPzlc" },
                 ],
                 core: "Sin ejercicio de Core específico en la rutina.",
-                [cite_start]cardio: "Opcional: 10-15 minutos de saltos, cuerda, caminata rápida o bicicleta estática. [cite: 51]",
+                cardio: "Opcional: 10-15 minutos de saltos, cuerda, caminata rápida o bicicleta estática.",
             },
             jueves: {
-                [cite_start]group: "HOMBROS Y CORE [cite: 52]",
-                [cite_start]objective: "Estabilizar y dar forma al tren superior [cite: 53]",
+                group: "HOMBROS Y CORE",
+                objective: "Estabilizar y dar forma al tren superior",
                 exercises: [
-                    [cite_start]{ name: "Press militar con mancuernas", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=o5M9RZ-vWrc [cite: 23, 54]" },
-                    [cite_start]{ name: "Elevaciones laterales", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=O0n4ITO_288 [cite: 24, 56]" },
-                    [cite_start]{ name: "Elevaciones frontales", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=brSl4bFCV1g [cite: 25, 56]" },
-                    [cite_start]{ name: "Remo al mentón con mancuernas", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=ih1i9GN7ΥΟΥ [cite: 26, 56]" },
-                    [cite_start]{ name: "Encogimientos de hombros", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=OsUz898onTE [cite: 27, 56]" },
+                    { name: "Press militar con mancuernas", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=o5M9RZ-vWrc" },
+                    { name: "Elevaciones laterales", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=O0n4ITO_288" },
+                    { name: "Elevaciones frontales", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=brSl4bFCV1g" },
+                    { name: "Remo al mentón con mancuernas", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=ih1i9GN7YOY" }, // URL corregida
+                    { name: "Encogimientos de hombros", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=OsUz898onTE" },
                 ],
-                [cite_start]// El core de Jueves es: Abdominales (crunch) 3x15-20 y Plancha 3x30 seg [cite: 56, 58]
-                core: 'Abdominales (crunch): 3 Series / 15-20 Repeticiones. (Ver [video Abdominales](https://www.youtube.com/watch?v=7ILGUv7DZvw) [cite_start][cite: 27]). Finaliza: Plancha frontal 30 segundos.',
-                [cite_start]cardio: "Opcional: 10-15 minutos de saltos, cuerda, caminata rápida o bicicleta estática. [cite: 60]",
+                // El core de Jueves es: Abdominales (crunch) 3x15-20 y Plancha 3x30 seg
+                core: 'Abdominales (crunch): 3 Series / 15-20 Repeticiones. (Ver [video Abdominales](https://www.youtube.com/watch?v=7ILGUv7DZvw)). Finaliza: Plancha frontal 30 segundos.',
+                cardio: "Opcional: 10-15 minutos de saltos, cuerda, caminata rápida o bicicleta estática.",
             },
             viernes: {
-                [cite_start]group: "FULL BODY + CARDIO [cite: 61]",
-                [cite_start]objective: "Activar todo el cuerpo [cite: 62]",
+                group: "FULL BODY + CARDIO",
+                objective: "Activar todo el cuerpo",
                 exercises: [
-                    [cite_start]{ name: "Sentadilla + Press con mancuernas", setsReps: "5 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=Rgh15uWbbEM [cite: 29, 63]" },
-                    [cite_start]{ name: "Peso muerto + Remo", setsReps: "5 Series / 12 Repeticiones", url: "https://www.youtube.com/shorts/dugGqC6mBdU [cite: 29, 63]" },
-                    [cite_start]{ name: "Zancada + Curl de bíceps", setsReps: "5 Series / 12 Repeticiones", url: "https://www.youtube.com/shorts/9Jy2d0WuyPw [cite: 29, 64]" },
+                    { name: "Sentadilla + Press con mancuernas", setsReps: "5 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=Rgh15uWbbEM" },
+                    { name: "Peso muerto + Remo", setsReps: "5 Series / 12 Repeticiones", url: "https://www.youtube.com/shorts/dugGqC6mBdU" },
+                    { name: "Zancada + Curl de bíceps", setsReps: "5 Series / 12 Repeticiones", url: "https://www.youtube.com/shorts/9Jy2d0WuyPw" },
                 ],
                 core: "Sin ejercicio de Core específico en la rutina.",
-                [cite_start]cardio: "Opcional (adicional al Full Body): 10-15 minutos de saltos, cuerda, caminata rápida o bicicleta estática. [cite: 69]",
+                cardio: "Opcional (adicional al Full Body): 10-15 minutos de saltos, cuerda, caminata rápida o bicicleta estática.",
             },
             descanso: {
                 group: "Días de Descanso (Sábado y Domingo)",
@@ -232,10 +232,9 @@
                 } else {
                     // Genera la lista de ejercicios con enlaces a videos
                     const exerciseListHtml = data.exercises.map(ex => {
-                        // Eliminar citas para la visualización del usuario
-                        const cleanName = ex.name.replace(/\/g, '').trim();
-                        const cleanSetsReps = ex.setsReps.replace(/\/g, '').trim();
-                        const cleanUrl = ex.url ? ex.url.replace(/\/g, '').trim() : null;
+                        const cleanName = ex.name.trim();
+                        const cleanSetsReps = ex.setsReps.trim();
+                        const cleanUrl = ex.url ? ex.url.trim() : null;
 
                         return `
                             <li class="flex items-start justify-between text-gray-300">
@@ -250,17 +249,15 @@
                         `;
                     }).join('');
 
-                    // Reemplazar enlaces Markdown ([texto](url)) en la sección core con HTML <a> tags y limpiar citas
+                    // Reemplazar enlaces Markdown ([texto](url)) en la sección core con HTML <a> tags
                     const coreContent = data.core.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (match, text, url) => {
-                        const cleanText = text.replace(/\/g, '').trim();
-                        const cleanUrl = url.replace(/\/g, '').trim();
-                        return `<a href="${cleanUrl}" target="_blank" class="text-infit hover:underline">${cleanText}</a>`;
-                    }).replace(/\/g, '').trim();
+                        return `<a href="${url.trim()}" target="_blank" class="text-infit hover:underline">${text.trim()}</a>`;
+                    }).trim();
 
 
                     htmlContent = `
-                        <h3 class="text-2xl font-bold text-infit">${data.group.replace(/\/g, '').trim()}</h3>
-                        <p class="text-lg text-gray-400 mb-4">Objetivo: ${data.objective.replace(/\/g, '').trim()}</p>
+                        <h3 class="text-2xl font-bold text-infit">${data.group}</h3>
+                        <p class="text-lg text-gray-400 mb-4">Objetivo: ${data.objective}</p>
                         <div class="grid md:grid-cols-2 gap-6 mt-4">
                             <div>
                                 <h4 class="text-xl font-bold text-white mb-2">Ejercicios (${data.exercises.length})</h4>
@@ -276,7 +273,7 @@
                                 <p class="text-gray-300 mb-4">${coreContent}</p>
 
                                 <h4 class="text-xl font-bold text-white mb-2">Cardio Final</h4>
-                                <p class="text-gray-300">${data.cardio.replace(/\/g, '').trim()}</p>
+                                <p class="text-gray-300">${data.cardio}</p>
                             </div>
                         </div>
                     `;
