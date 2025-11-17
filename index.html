@@ -43,17 +43,20 @@
 
         <header class="text-center mb-10">
             <div class="mb-4">
-                <img src="logo-infit.jpg" alt="Logotipo INFIT" class="w-32 mx-auto">
-            </div>
+               <!-- CAMBIO CRUCIAL: Se utiliza la ruta relativa "./logo-infit.jpg" para que se muestre el logo real cuando subas el archivo a GitHub. -->
+               <!-- Asegúrate de que el archivo logo-infit.jpg esté en la misma carpeta que este HTML. -->
+               <img src="./logo-infit.jpg" alt="Logotipo INFIT" class="w-32 h-32 object-cover mx-auto rounded-full shadow-lg border-4 border-infit">
+           </div>
+           <h3 class="text-3xl font-semibold text-white mb-2">¡Bienvenido, Jaime!</h3>
             <h1 class="text-5xl font-bold text-infit uppercase tracking-wider">Plan de Entrenamiento Principiante</h1>
             <h2 class="text-2xl font-semibold text-gray-300 mt-2">SOLO MANCUERNAS (CASA O GYM)</h2>
             <div class="mt-4 text-lg max-w-3xl mx-auto text-gray-300">
                 <p class="font-bold">Nivel: Principiante</p>
-                <p>Frecuencia: Lunes a Viernes</p>
-                <p>Duración por sesión: 60-90 minutos</p>
-                <p>Descanso entre series: 45-60 segundos</p>
-            </div>
-            <p class="mt-4 text-lg max-w-3xl mx-auto text-gray-300">
+               <p>Frecuencia: Lunes a Viernes</p>
+               <p>Duración por sesión: 60-90 minutos</p>
+               <p>Descanso entre series: 45-60 segundos</p>
+           </div>
+           <p class="mt-4 text-lg max-w-3xl mx-auto text-gray-300">
                 Tu Mejor Versión te está esperando.
             </p>
         </header>
@@ -64,60 +67,60 @@
 
                 <p class="text-gray-400 text-center mb-6">
                     Equipo necesario: Mancuernas ajustables o de diferentes pesos + tapete o banco. Enfócate en la técnica.
-                </p>
+               </p>
 
-                <nav id="day-selector" class="flex flex-wrap justify-center gap-2 md:gap-4 mb-6">
-                    <button data-day="lunes" class="day-btn py-3 px-6 bg-gray-800 border-2 border-gray-700 rounded-full text-white font-semibold transition-all duration-300 hover:bg-infit hover:text-black hover:border-infit">Lunes</button>
-                    <button data-day="martes" class="day-btn py-3 px-6 bg-gray-800 border-2 border-gray-700 rounded-full text-white font-semibold transition-all duration-300 hover:bg-infit hover:text-black hover:border-infit">Martes</button>
-                    <button data-day="miercoles" class="day-btn py-3 px-6 bg-gray-800 border-2 border-gray-700 rounded-full text-white font-semibold transition-all duration-300 hover:bg-infit hover:text-black hover:border-infit">Miércoles</button>
-                    <button data-day="jueves" class="day-btn py-3 px-6 bg-gray-800 border-2 border-gray-700 rounded-full text-white font-semibold transition-all duration-300 hover:bg-infit hover:text-black hover:border-infit">Jueves</button>
-                    <button data-day="viernes" class="day-btn py-3 px-6 bg-gray-800 border-2 border-gray-700 rounded-full text-white font-semibold transition-all duration-300 hover:bg-infit hover:text-black hover:border-infit">Viernes</button>
-                    <button data-day="descanso" class="day-btn py-3 px-6 bg-gray-800 border-2 border-gray-700 rounded-full text-white font-semibold transition-all duration-300 hover:bg-infit hover:text-black hover:border-infit">Días de Descanso</button>
-                </nav>
+               <nav id="day-selector" class="flex flex-wrap justify-center gap-2 md:gap-4 mb-6">
+                   <button data-day="lunes" class="day-btn py-3 px-6 bg-gray-800 border-2 border-gray-700 rounded-full text-white font-semibold transition-all duration-300 hover:bg-infit hover:text-black hover:border-infit">Lunes</button>
+                   <button data-day="martes" class="day-btn py-3 px-6 bg-gray-800 border-2 border-gray-700 rounded-full text-white font-semibold transition-all duration-300 hover:bg-infit hover:text-black hover:border-infit">Martes</button>
+                   <button data-day="miercoles" class="day-btn py-3 px-6 bg-gray-800 border-2 border-gray-700 rounded-full text-white font-semibold transition-all duration-300 hover:bg-infit hover:text-black hover:border-infit">Miércoles</button>
+                   <button data-day="jueves" class="day-btn py-3 px-6 bg-gray-800 border-2 border-gray-700 rounded-full text-white font-semibold transition-all duration-300 hover:bg-infit hover:text-black hover:border-infit">Jueves</button>
+                   <button data-day="viernes" class="day-btn py-3 px-6 bg-gray-800 border-2 border-gray-700 rounded-full text-white font-semibold transition-all duration-300 hover:bg-infit hover:text-black hover:border-infit">Viernes</button>
+                   <button data-day="descanso" class="day-btn py-3 px-6 bg-gray-800 border-2 border-gray-700 rounded-full text-white font-semibold transition-all duration-300 hover:bg-infit hover:text-black hover:border-infit">Días de Descanso</button>
+               </nav>
 
-                <div id="content-display" class="bg-black p-6 rounded-xl min-h-[25rem] transition-opacity duration-500">
-                    <p class="text-gray-400 text-center py-20">Selecciona un día para ver los detalles de tu rutina.</p>
-                </div>
+               <div id="content-display" class="bg-black p-6 rounded-xl min-h-[25rem] transition-opacity duration-500">
+                   <p class="text-gray-400 text-center py-20">Selecciona un día para ver los detalles de tu rutina.</p>
+               </div>
             </div>
 
             <aside class="lg:col-span-1 grid gap-8">
-                <div class="bg-infit-dark p-6 rounded-2xl shadow-lg border border-gray-800">
-                    <h2 class="text-2xl font-bold text-infit mb-4">📈 Progresión y Recomendaciones</h2>
-                    <ul class="space-y-4 text-gray-300">
-                        <li>
-                            <h3 class="font-bold text-lg text-white">Progresión Semanal:</h3>
-                            <p class="text-gray-400">
-                                Semana 1-2: Peso ligero, enfoque en técnica.<br>
-                                Semana 3-4: Aumenta 10-15% el peso.
-                            </p>
-                        </li>
-                        <li>
-                            <h3 class="font-bold text-lg text-white">Guía General:</h3>
-                            <ul class="list-disc ml-5 text-gray-400 space-y-2">
-                                <li>Calienta antes (5-10 min de movilidad o cardio ligero).</li>
-                                <li>Estira al final (5-10 min).</li>
-                                <li>Registra tus pesos y progresos.</li>
-                                <li>Hidratación constante.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+               <div class="bg-infit-dark p-6 rounded-2xl shadow-lg border border-gray-800">
+                   <h2 class="text-2xl font-bold text-infit mb-4">📈 Progresión y Recomendaciones</h2>
+                   <ul class="space-y-4 text-gray-300">
+                       <li>
+                           <h3 class="font-bold text-lg text-white">Progresión Semanal:</h3>
+                           <p class="text-gray-400">
+                               Semana 1-2: Peso ligero, enfoque en técnica.<br>
+                               Semana 3-4: Aumenta 10-15% el peso.
+                           </p>
+                       </li>
+                       <li>
+                           <h3 class="font-bold text-lg text-white">Guía General:</h3>
+                           <ul class="list-disc ml-5 text-gray-400 space-y-2">
+                               <li>Calienta antes (5-10 min de movilidad o cardio ligero).</li>
+                               <li>Estira al final (5-10 min).</li>
+                               <li>Registra tus pesos y progresos.</li>
+                               <li>Hidratación constante.</li>
+                           </ul>
+                       </li>
+                   </ul>
+               </div>
 
-                <div class="bg-infit-dark p-6 rounded-2xl shadow-lg border border-gray-800">
-                    <h2 class="text-2xl font-bold text-infit mb-4">🍽️ Alimentación y Descanso</h2>
-                    <ul class="space-y-4 text-gray-300">
-                        <li>
-                            <h3 class="font-bold text-lg text-white">Alimentación:</h3>
-                            <p class="text-gray-400">
-                                Debe ser adecuada según tu objetivo (ganar músculo o perder grasa). La nutrición adecuada es la base para alcanzar tus objetivos. Pronto más información 🥗
-                            </p>
-                        </li>
-                        <li>
-                            <h3 class="font-bold text-lg text-white">Descanso:</h3>
-                            <p class="text-gray-400">Es crucial para la recuperación muscular y el crecimiento.</p>
-                        </li>
-                    </ul>
-                </div>
+               <div class="bg-infit-dark p-6 rounded-2xl shadow-lg border border-gray-800">
+                   <h2 class="text-2xl font-bold text-infit mb-4">🍽️ Alimentación y Descanso</h2>
+                   <ul class="space-y-4 text-gray-300">
+                       <li>
+                           <h3 class="font-bold text-lg text-white">Alimentación:</h3>
+                           <p class="text-gray-400">
+                               Debe ser adecuada según tu objetivo (ganar músculo o perder grasa). La nutrición adecuada es la base para alcanzar tus objetivos. Pronto más información 🥗
+                           </p>
+                       </li>
+                       <li>
+                           <h3 class="font-bold text-lg text-white">Descanso:</h3>
+                           <p class="text-gray-400">Es crucial para la recuperación muscular y el crecimiento.</p>
+                       </li>
+                   </ul>
+               </div>
             </aside>
         </main>
 
@@ -140,7 +143,7 @@
                     { name: "Copa tríceps", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=rGFXnq5aHQg" },
                     { name: "Patada de tríceps", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=35U1T7p8MME" },
                 ],
-                // El core de lunes es: Finaliza: 3 minutos de plancha o abdominales.
+                // Ajustado: Se mantiene el core como estaba originalmente en tu código para el lunes
                 core: 'Finaliza con 3 minutos de plancha o [abdominales (crunch)](https://www.youtube.com/watch?v=zfY5XXa26ug).',
                 cardio: "Opcional: 10-15 minutos de saltos, cuerda, caminata rápida o bicicleta estática.",
             },
@@ -150,12 +153,15 @@
                 exercises: [
                     { name: "Remo con mancuernas (una mano)", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=N_KrUuUsg9k" },
                     { name: "Pull-over con mancuernas", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=OyAZc4837QQ" },
-                    { name: "Peso muerto con mancuernas", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=7EFIWfvU59w" },
+                    // URL de Peso Muerto corregida
+                    { name: "Peso muerto con mancuernas", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=7EFlWfvU59w" },
                     { name: "Curl de bíceps alternado", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=9Q7Ncmr0bLg" },
                     { name: "Curl tipo martillo", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=Xfp9_TCvba0" },
-                    { name: "Curl concentrado (sentado o apoyado)", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=ol7LxnEFmZU" },
+                    // URL de Curl concentrado corregida
+                    { name: "Curl concentrado (sentado o apoyado)", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=oI7LxnEFmZU" },
                 ],
-                core: "Sin ejercicio de Core específico en la rutina.",
+                // Ajustado: Eliminado según solicitud
+                core: null, 
                 cardio: "Opcional: 10-15 minutos de saltos, cuerda, caminata rápida o bicicleta estática.",
             },
             miercoles: {
@@ -164,11 +170,14 @@
                 exercises: [
                     { name: "Sentadillas con mancuernas", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=4xVs7iOSd2Q" },
                     { name: "Peso muerto rumano (piernas semirrígidas)", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=yxLk9X5C7RU" },
-                    { name: "Zancadas alternadas", setsReps: "3 Series / 10 Repeticiones por pierna", url: "https://www.youtube.com/watch?v=uqvt79Uh404" },
+                    // URL de Zancadas corregida
+                    { name: "Zancadas alternadas", setsReps: "3 Series / 10 Repeticiones por pierna", url: "https://www.youtube.com/watch?v=uqvt79Uh4o4" },
                     { name: "Sentadilla búlgara (una pierna sobre banco)", setsReps: "3 Series / 10 Repeticiones por pierna", url: "https://www.youtube.com/watch?v=v_jM-eTlzXQ" },
-                    { name: "Elevaciones de talones (pantorrillas)", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=H3lii8hPzlc" },
+                    // URL de Elevaciones de talones corregida
+                    { name: "Elevaciones de talones (pantorrillas)", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=H3Iii8hPzlc" },
                 ],
-                core: "Sin ejercicio de Core específico en la rutina.",
+                // Ajustado: Mantenido para evitar errores, pero se mostrará como "Sin ejercicio de Core específico"
+                core: null,
                 cardio: "Opcional: 10-15 minutos de saltos, cuerda, caminata rápida o bicicleta estática.",
             },
             jueves: {
@@ -176,13 +185,17 @@
                 objective: "Estabilizar y dar forma al tren superior",
                 exercises: [
                     { name: "Press militar con mancuernas", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=o5M9RZ-vWrc" },
-                    { name: "Elevaciones laterales", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=O0n4ITO_288" },
-                    { name: "Elevaciones frontales", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=brSl4bFCV1g" },
-                    { name: "Remo al mentón con mancuernas", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=ih1i9GN7YOY" }, // URL corregida
-                    { name: "Encogimientos de hombros", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=OsUz898onTE" },
+                    // URL de Elevaciones Laterales - ¡LIGA ACTUALIZADA!
+                    { name: "Elevaciones laterales", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/shorts/zBqZqAjCnR4" },
+                    // URL de Elevaciones frontales - CORREGIDA con tu enlace para Frontales
+                    { name: "Elevaciones frontales", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=O0n4ITO_288" },
+                    // URL de Remo al mentón - CORREGIDA con tu enlace para Remo al Mentón
+                    { name: "Remo al mentón con mancuernas", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/watch?v=brSI4bFCV1g" }, 
+                    // URL de Encogimientos de hombros corregida
+                    { name: "Encogimientos de hombros", setsReps: "3 Series / 12 Repeticiones", url: "https://www.youtube.com/shorts/r1QsTmpCkCo" },
                 ],
-                // El core de Jueves es: Abdominales (crunch) 3x15-20 y Plancha 3x30 seg
-                core: 'Abdominales (crunch): 3 Series / 15-20 Repeticiones. (Ver [video Abdominales](https://www.youtube.com/watch?v=7ILGUv7DZvw)). Finaliza: Plancha frontal 30 segundos.',
+                // Ajustado: Eliminados corchetes externos
+                core: 'Abdominales (crunch): 3 Series / 15-20 Repeticiones. (Ver [video Abdominales](https://www.youtube.com/shorts/dNuGXV0nXGA)).',
                 cardio: "Opcional: 10-15 minutos de saltos, cuerda, caminata rápida o bicicleta estática.",
             },
             viernes: {
@@ -193,7 +206,8 @@
                     { name: "Peso muerto + Remo", setsReps: "5 Series / 12 Repeticiones", url: "https://www.youtube.com/shorts/dugGqC6mBdU" },
                     { name: "Zancada + Curl de bíceps", setsReps: "5 Series / 12 Repeticiones", url: "https://www.youtube.com/shorts/9Jy2d0WuyPw" },
                 ],
-                core: "Sin ejercicio de Core específico en la rutina.",
+                // Ajustado: Eliminado según solicitud
+                core: null,
                 cardio: "Opcional (adicional al Full Body): 10-15 minutos de saltos, cuerda, caminata rápida o bicicleta estática.",
             },
             descanso: {
@@ -236,41 +250,52 @@
                         const cleanSetsReps = ex.setsReps.trim();
                         const cleanUrl = ex.url ? ex.url.trim() : null;
 
+                        // SVG del ícono de YouTube
+                        const youtubeIcon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-5 h-5 fill-current"><path d="M549.655 124.083c-6.236-25.753-18.783-48.78-36.87-66.961C482.025 35.539 458.03-2.457 400.758 0H175.242c-57.276-2.457-81.272 35.539-111.97 57.122-18.087 18.181-30.634 41.208-36.87 66.961-5.748 24.96-5.748 51.109-5.748 77.258v122.956c0 26.148 0 52.298 5.748 77.257 6.236 25.754 18.783 48.781 36.87 66.961C94.015 476.46 117.96 514.457 175.242 512h225.515c57.276 2.457 81.272-35.539 111.97-57.122 18.087-18.181 30.634-41.208 36.87-66.961 5.748-24.96 5.748-51.109 5.748-77.257V201.341c0-26.149 0-52.298-5.748-77.258zM279 359L385.1 299.11C392 295.1 392 291 385.1 286.9L279 227v132z"/></svg>`;
+
                         return `
-                            <li class="flex items-start justify-between text-gray-300">
-                                <span class="flex items-center">
-                                    <span class="text-infit mr-3 mt-1">⚫</span>
-                                    ${cleanName}: ${cleanSetsReps}
+                            <li class="flex items-start justify-between text-gray-300 py-2 border-b border-gray-900 last:border-b-0">
+                                <span class="flex items-center text-lg">
+                                    <span class="text-infit mr-3 mt-1">💪</span>
+                                    ${cleanName}: <span class="ml-2 font-semibold text-white">${cleanSetsReps}</span>
                                 </span>
-                                ${cleanUrl ? `<a href="${cleanUrl}" target="_blank" class="youtube-link" title="Ver video del ejercicio">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-5 h-5 fill-current"><path d="M549.655 124.083c-6.236-25.753-18.783-48.78-36.87-66.961C482.025 35.539 458.03-2.457 400.758 0H175.242c-57.276-2.457-81.272 35.539-111.97 57.122-18.087 18.181-30.634 41.208-36.87 66.961-5.748 24.96-5.748 51.109-5.748 77.258v122.956c0 26.148 0 52.298 5.748 77.257 6.236 25.754 18.783 48.781 36.87 66.961C94.015 476.46 117.96 514.457 175.242 512h225.515c57.276 2.457 81.272-35.539 111.97-57.122 18.087-18.181 30.634-41.208 36.87-66.961 5.748-24.96 5.748-51.109 5.748-77.257V201.341c0-26.149 0-52.298-5.748-77.258zM279 359L385.1 299.11C392 295.1 392 291 385.1 286.9L279 227v132z"/></svg>
-                                </a>` : ''}
+                                ${cleanUrl ? 
+                                    `<a href="${cleanUrl}" target="_blank" class="youtube-link flex-shrink-0" title="Ver video del ejercicio">
+                                        ${youtubeIcon}
+                                    </a>` :
+                                    ''}
                             </li>
                         `;
                     }).join('');
 
                     // Reemplazar enlaces Markdown ([texto](url)) en la sección core con HTML <a> tags
-                    const coreContent = data.core.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (match, text, url) => {
+                    const coreContent = data.core ? data.core.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (match, text, url) => {
                         return `<a href="${url.trim()}" target="_blank" class="text-infit hover:underline">${text.trim()}</a>`;
-                    }).trim();
+                    }).trim() : "Sin ejercicio de Core específico en la rutina.";
+                    
+                    // Condición para mostrar "Core/Finalizador" solo si data.core no es null
+                    const coreSection = data.core !== null ? 
+                    `<div>
+                        <h4 class="text-xl font-bold text-white mb-2">Core/Finalizador</h4>
+                        <p class="text-gray-300 mb-4">${coreContent}</p>
+                    </div>` : '';
 
 
                     htmlContent = `
-                        <h3 class="text-2xl font-bold text-infit">${data.group}</h3>
-                        <p class="text-lg text-gray-400 mb-4">Objetivo: ${data.objective}</p>
+                        <h3 class="text-3xl font-bold text-infit border-b border-gray-800 pb-2 mb-4">${data.group}</h3>
+                        <p class="text-lg text-gray-400 mb-6">Objetivo: ${data.objective}</p>
                         <div class="grid md:grid-cols-2 gap-6 mt-4">
                             <div>
                                 <h4 class="text-xl font-bold text-white mb-2">Ejercicios (${data.exercises.length})</h4>
-                                <ul class="space-y-2 list-none">
-                                    ${exerciseListHtml}
+                                <ul class="space-y-2 list-none bg-infit-dark p-4 rounded-lg border border-gray-700">
+                                   ${exerciseListHtml}
                                 </ul>
                             </div>
                             <div>
                                 <h4 class="text-xl font-bold text-white mb-2">Descanso entre Series</h4>
                                 <p class="text-gray-300 mb-4">45-60 segundos</p>
-
-                                <h4 class="text-xl font-bold text-white mb-2">Core/Finalizador</h4>
-                                <p class="text-gray-300 mb-4">${coreContent}</p>
+                                
+                                ${coreSection}
 
                                 <h4 class="text-xl font-bold text-white mb-2">Cardio Final</h4>
                                 <p class="text-gray-300">${data.cardio}</p>
